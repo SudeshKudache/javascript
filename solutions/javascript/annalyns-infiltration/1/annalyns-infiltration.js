@@ -16,12 +16,7 @@ export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
 // Free prisoner:
 // Case 1: Dog present → knight must be asleep
 // Case 2: No dog → archer asleep AND prisoner awake AND knight asleep
-export function canFreePrisoner(
-  knightIsAwake,
-  archerIsAwake,
-  prisonerIsAwake,
-  petDogIsPresent,
-) {
+export function canFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent,) {
   if (petDogIsPresent) {
     return !archerIsAwake;
   }
